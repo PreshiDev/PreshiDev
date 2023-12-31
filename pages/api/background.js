@@ -3,24 +3,31 @@ const background = [
         eduCards: [
             {
                 id: 0,
-                title: 'UET Peshawar',
-                degree: 'BS, Computer System Engineering',
-                detail: "Bachelor's Degree in Computer System Engineering from UET Peshawar.",
-                year: '2018-2022'
+                title: 'The Polytechnic Ibadan',
+                degree: 'Diploma, Computer Studies',
+                detail: "Diploma in Computer Studies from The Polytechnic Ibadan.",
+                year: '2019-2022'
             },
             {
                 id: 1,
-                title: 'Peshawar Model Degree College',
-                degree: 'HSSC, Pre Engineering',
-                detail: "Completed FSC part 1 and part 2 in Pre-Engineering from Peshawar Model Degree College.",
-                year: '2015-2017'
+                title: 'Osma int College',
+                degree: 'Senior Secondary School Certificate {WAEC}',
+                detail: "Completed my senior secondary school from Osma Int College.",
+                year: '2014-2016'
             },
             {
                 id: 2,
-                title: 'Falcon Academy',
-                degree: 'SSC, Science Subjects',
-                detail: "Completed SSC part 1 and part 2 in Science subjects from Falcon Academy Seni Gumbat Kohat",
-                year: '2013-2015'
+                title: 'Divine Favour College',
+                degree: 'Junior Secondary School Certificate',
+                detail: "Completed my junior secondary schoool from Divine Favour college",
+                year: '2012-2014'
+            },
+            {
+                id: 3,
+                title: 'Udemy',
+                degree: 'certified | SEO expert | Javascript | Mobile App Dev... ',
+                detail: "Completed Major IT skills from Udemy",
+                year: '2020-present'
             },
         ]
     },

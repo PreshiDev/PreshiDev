@@ -2,10 +2,10 @@
 const recommendationCard = [
   {
     id: 0,
-    name: 'Shahmir Minhas',
-    image: "images/shahmir.jfif",
-    designation: 'React JS | NEXT JS | Node | GraphQL',
-    view: "Hey everyone! I wanted to take a moment to recommend Osama Javaid for any React.js opportunities. I had the pleasure of working with him on multiple projects where he showcased a strong understanding of React.js and Next.js concepts and delivered high-quality code. He consistently demonstrated a willingness to learn and grow, and his enthusiasm for tackling new challenges was contagious. Osama is a reliable and dedicated team member who would be a great asset to any React.js team. Highly recommended! 👍! 🌟",
+    name: 'Ademola',
+    image: "images/Black-Boy-Retro-Charming-Avatar-47769583-1.png",
+    designation: 'React JS | Django',
+    view: "Hey everyone! I wanted to take a moment to recommend Precious Gift for any React.js/Web application opportunities. I had the pleasure of working with him on multiple projects where he showcased a strong understanding of web app's concepts and delivered high-quality code. He consistently demonstrated a willingness to learn and grow, and his enthusiasm for tackling new challenges was contagious. Precious is a reliable and dedicated. Highly recommended! 👍! 🌟",
     linkednURL: "https://www.linkedin.com/in/shahmir-minhas/"
   },
   {

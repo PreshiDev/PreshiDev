@@ -17,8 +17,8 @@ function Background() {
 
     return (
         <BannerLayout>
-            <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-Green px-4 pb-2 pt-10">
-                <div className="flex flex-col gap-y-4 order-2 md:order-1  md:mr-12">
+            <div className="grid md:grid-cols-2 md:divide-x-4 md:divide-Green px-4 pb-2 pt-10 aos-fade-out">
+                <div className="flex flex-col gap-y-4 order-2 md:order-1  md:mr-12 aos-delay-100 aos-fade-out">
                     <div className="mt-10 md:mt-0 text-xl text-Snow font-semibold">Education</div>
                     {isLoading ?
                         [1, 2, 3].map(() => (
@@ -31,7 +31,7 @@ function Background() {
                     }
 
                 </div>
-                <div className="order-1 md:order-2">
+                <div className="order-1 md:order-2 aos-delay-200 aos-fade-out">
                     <div className="flex flex-col gap-y-4 md:ml-12">
                         <div className=" md:pt-0 pt-4 text-xl text-Snow font-semibold">Experience</div>
 
