@@ -7,9 +7,30 @@ import { BsChatTextFill } from 'react-icons/bs'
 import Fiverr_Icon from '../components/Fiverr_Icon';
 import Footer from '../components/Footer';
 import { Modal } from 'antd';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [success, setSuccess] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
     const [isOpen, setIsOpen] = useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_ez415t7', 'template_lgvh4dn', e.target, 'ZOdzwo_EfMWrvt-GL')
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(true);
+                setFormData({ name: '', email: '', message: '' }); // Clear form data
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <BannerLayout>
@@ -48,25 +69,26 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="h-16 w-full card_stylings text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-Snow">
-                    <a className='hover:scale-125 ease-in-out duration-700' href="" target='_blank' rel="noreferrer"><HiMail /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/osamajavaid" target='_blank' rel="noreferrer"><FaGithub /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/iosamajavaid/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://x.com/iosamajavaid" target='_blank' rel="noreferrer"><FaTwitter /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/codeworthy" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="https://mail.google.com/mail/u/0/#inbox" target='_blank' rel="noreferrer"><HiMail /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/PreshiDev" target='_blank' rel="noreferrer"><FaGithub /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/precious-gift-grandalat/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="" target='_blank' rel="noreferrer"><FaTwitter /></a>
+                    {/* <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/codeworthy" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
+                        <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a>
+                    */}
                 </div>
 
 
                 <div className="my-12 w-full h-auto text-Snow">
                     <h1 className='text-lg font-bold'>Get In Touch</h1>
-                    <div className="mt-4 py-8 px-8 bg-EveningBlack rounded-xl text-sm">
+                    <form onSubmit={sendEmail} className={`mt-4 py-8 px-8 bg-EveningBlack rounded-xl text-sm ${success ? 'form-success' : ''}`}>
                         <div>
                             <div className="flex flex-col w-full">
                                 <div className="userIcon relative mb-6">
                                     <div id="icon" className="absolute inset-y-0 left-0 flex items-center pl-3 text-xl pointer-events-none">
                                         <HiUser />
                                     </div>
-                                    <input type="text" className="input_stylings" placeholder="Name" />
+                                    <input type="text" name="name" value={formData.name} onChange={handleChange} className="input_stylings" placeholder="Name" />
                                 </div>
                             </div>
 
@@ -75,7 +97,7 @@ const Contact = () => {
                                     <div id="icon" className="absolute inset-y-0 left-0 flex items-center text-xl pl-3 pointer-events-none">
                                         <HiMail />
                                     </div>
-                                    <input type="text" className="input_stylings" placeholder="Email" />
+                                    <input type="email" name="email" value={formData.email} onChange={handleChange} className="input_stylings" placeholder="Email" />
                                 </div>
                             </div>
 
@@ -84,15 +106,15 @@ const Contact = () => {
                                     <div id="icon" className="absolute top-3 left-0 flex items-center text-lg pl-3 pointer-events-none">
                                         <BsChatTextFill />
                                     </div>
-                                    <textarea rows={6} cols={50} className="input_stylings" placeholder="Message" />
+                                    <textarea name="message" value={formData.message} onChange={handleChange} rows={6} cols={50} className="input_stylings" placeholder="Message" />
                                 </div>
                             </div>
 
                             <div className="my-4">
-                                <button onClick={() => setIsOpen(true)} className="button"> SEND MESSAGE </button>
+                                <button type="submit" className="button">SEND MESSAGE</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             {/* success modal */}
@@ -108,7 +130,7 @@ const Contact = () => {
             >
                 <div className='flex flex-col items-center justify-center'>
                     <h1 className='text-Green font-bold text-2xl'>In Progress</h1>
-                    <a className='underline text-Snow' target='_blank' href='https://github.com/osamajavaid/portfolio'>Be the one to integrate this!</a>
+                    <a className='underline text-Snow' target='_blank' href='https://github.com/PreshiDev'>Be the one to integrate this!</a>
                 </div>
             </Modal>
             <Footer />

@@ -62,8 +62,8 @@ export const CONTACTS = {
 };
 
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/osamajavaid',
-  LINKEDIN: 'https://www.linkedin.com/in/iosamajavaid/',
-  TWITTER: 'https://twitter.com/iosamajavaid',
-  FACEBOOK: 'https://www.facebook.com/iosamajavaid',
+  GITHUB: 'https://github.com/PreshiDev',
+  LINKEDIN: 'https://www.linkedin.com/in/precious-gift-grandalat/',
+  TWITTER: '',
+  FACEBOOK: 'https://web.facebook.com/precious.vic.921/',
 };
