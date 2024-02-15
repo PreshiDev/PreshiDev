@@ -1,19 +1,19 @@
 const portfolio = [
     {
         id: 0,
-        projectName: "JMM Technologies",
-        url: "https://jmm.ltd/",
-        image: "projects/jmm.png",
-        projectDetail: "JMM Technologies is a start-up turned technology company with extensive years of experience delivering digital solutions. As a fast-growing tech firm, we help diverse businesses and organizations. Our expertise in innovative, state-of-the-art digital services accelerates business growth and enhances customer impact.",
+        projectName: "Justshup E-market Hub",
+        url: "https://justshup.com",
+        image: "projects/justshup.png",
+        projectDetail: "JustShup isn't just another digital marketplace – it's the ultimate destination for entrepreneurs in Ibadan to thrive! Imagine having the power to showcase your products to a vast audience without ever leaving the comfort of your own store. With JustShup, this vision becomes a reality.",
         technologiesUsed: [
             {
-                tech: "ReactJS"
+                tech: "AlpineJs"
             },
             {
-                tech: ".net"
+                tech: "Javascript"
             },
             {
-                tech: "Ant Design"
+                tech: "Django"
             },
             {
                 tech: "TailwindCSS"
@@ -30,9 +30,9 @@ const portfolio = [
             {
                 tech: "ReactJS"
             },
-            {
+            /*{
                 tech: ".net"
-            },
+            },*/
             {
                 tech: "Ant Design"
             },
@@ -51,9 +51,9 @@ const portfolio = [
             {
                 tech: "ReactJS"
             },
-            {
+            /*{
                 tech: ".net"
-            },
+            },*/
             {
                 tech: "Ant Design"
             },
@@ -72,9 +72,9 @@ const portfolio = [
             {
                 tech: "ReactJS"
             },
-            {
+            /*{
                 tech: ".net"
-            },
+            },*/
             {
                 tech: "Ant Design"
             },
@@ -93,9 +93,9 @@ const portfolio = [
             {
                 tech: "Nextjs with SSR"
             },
-            {
+            /*{
                 tech: "Laravel"
-            },
+            },*/
             {
                 tech: "Ant Design"
             },

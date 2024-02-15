@@ -35,30 +35,30 @@ const background = [
         expCards: [
             {
                 id: 1,
-                title: 'JMM Technologies',
+                title: 'Astratech',
                 role: 'Frontend Developer',
-                url: 'https://jmm.ltd/',
+                url: 'https://astratch.com.ng/',
                 desc: 'As a frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                year: '06/2022 - 11/2022',
+                location: 'Ibadan, Nigeria'
             },
             {
                 id: 2,
-                title: 'HauzaTech',
-                role: 'Internee',
+                title: 'Fiverr',
+                role: 'Freelancer',
                 url: 'no website',
-                desc: 'As an Internee, I learned how to use React & JavaScript to build interactive websites.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                desc: 'As a freelancer, From 2022 to 2023, I thrived as a freelance developer on Fiverr, specializing in Django, ReactJS, Tailwind, and React Native. My journey epitomizes dedication and talent, showcasing a remarkable ability to deliver exceptional results and build lasting client relationships.',
+                year: '12/2022 - 12/2023',
+                location: 'Online'
             },
             {
                 id: 3,
-                title: 'Encoder Bytes',
-                role: 'PHP Developer',
-                url: 'https://www.encoderbytes.com/',
-                desc: "I work there as a PHP developer, there I learned how to do CRUD'S operations in PHP, also I worked on Firebase",
-                year: '09/2020 - 02/2021',
-                location: 'Peshawar, Pakistan'
+                title: 'Grandalat',
+                role: 'ReactJs | Django | React Native Developer',
+                url: 'https://www.grandalat.com.ng/',
+                desc: "In a strategic move, I joined forces with Grandalat Tech, a dynamic startup agency, to elevate my career as a ReactJS, Django, and React Native developer. Since then, I've become an integral part of the team, showcasing my exceptional skills and driving innovation.",
+                year: '01/2023 - present',
+                location: 'Ibadan, Nigeria'
             },
 
         ]

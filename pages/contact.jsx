@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import BannerLayout from '../components/Common/BannerLayout';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import { SiUpwork } from 'react-icons/si'
 import { HiMail, HiUser } from 'react-icons/hi'
 import { BsChatTextFill } from 'react-icons/bs'
@@ -12,6 +12,10 @@ import emailjs from 'emailjs-com';
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
     const [success, setSuccess] = useState(false);
+
+    const phoneNumber = '+2348179445963';
+    const whatsappLink = `https://wa.me/${phoneNumber}`;
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -72,6 +76,7 @@ const Contact = () => {
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://mail.google.com/mail/u/0/#inbox" target='_blank' rel="noreferrer"><HiMail /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/PreshiDev" target='_blank' rel="noreferrer"><FaGithub /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/precious-gift-grandalat/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href={whatsappLink} target='_blank' rel="noreferrer"><FaWhatsapp /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="" target='_blank' rel="noreferrer"><FaTwitter /></a>
                     {/* <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/codeworthy" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
                         <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a>
