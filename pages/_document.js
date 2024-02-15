@@ -9,6 +9,7 @@ export default function Document() {
         <meta name="keywords" content="Precious, developer, Django, Python, ReactJS, React Native, portfolio, web development, mobile development, precious gift uwhuseba, preshie, prexxie" />
         <meta name="author" content="Precious" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="msvalidate.01" content="318A6EC0FEFB6C073444F1FD2E1CB0B9" />
 
         <meta property="og:title" content="Precious | Django | Python | ReactJS | and React Native Developer" />
         <meta property="og:description" content="Explore the portfolio of Precious, a proficient developer specializing in Django, Python, ReactJS, and React Native. Learn more about my journey in the About Me section and get in touch through the Contact Me page." />
