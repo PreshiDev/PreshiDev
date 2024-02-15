@@ -3,13 +3,30 @@ import Nav from '../components/Common/Nav/Nav';
 import { FaBars, FaMousePointer } from 'react-icons/fa';
 import { SlOptionsVertical } from 'react-icons/sl';
 import { useState } from 'react';
+import { StarIcon } from '@heroicons/react/24/solid'; // Corrected import based on Heroicons v2
 
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const [intro, setIntro] = useState(false);
 
   return (
-    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none font-circular aos-zoom-in`}>
+    <div className={`h-screen lg:p-[0.8rem] flex flex-col select-none font-circular aos-zoom-in relative overflow-hidden`}>
+      {/* Star Animation */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {[...Array(20)].map((_, index) => (
+          <StarIcon
+            key={index}
+            className="absolute animate-ping text-white"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+            }}
+            width={20}
+          />
+        ))}
+      </div>
+      
       <div className='lg:hidden'>
         <div className=' bg-DeepNightBlack text-LightGray w-full h-10 flex items-center justify-between px-2 lg:hidden relative'>
           <div className='icon flex items-center gap-x-2' onClick={(e) => setIntro(!intro)}>
@@ -40,11 +57,11 @@ export default function Layout({ children }) {
         {intro && <div onClick={(e) => setIntro(false)} className='fixed top-0 left-0  w-full h-full bg-black/50 backdrop-blur-[2px] z-40'></div>}
 
         {/* middle of screen */}
-        <div className='w-full h-auto lg:w-9/12 shadow-2xl bg-DeepNightBlack relative overflow-auto overflow-x-hidden no-scrollbar'>{children}</div>
+        <div className='w-full h-auto lg:w-9/12 shadow-2xl bg-transparent relative overflow-auto overflow-x-hidden no-scrollbar'>{children}</div>
+          
 
         {/* right side */}
-        {/* right side */}
-        <div className={`hidden lg:block absolute lg:w-20 lg:relative bg-DeepNightBlack shadow-2xl rounded-xl overflow-hidden`}>
+        <div className={`hidden lg:block absolute lg:w-20 lg:relative bg-transparent shadow-2xl rounded-xl overflow-hidden`}>
           <div onClick={(e) => setIsOpen(!isOpen)} className='bg-MidNightBlack text-Green hidden lg:flex items-center h-16 justify-center text-2xl '>
             <span className='icon border-2 border-Green p-2 rounded-xl'>
               {' '}

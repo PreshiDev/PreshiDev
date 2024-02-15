@@ -1,0 +1,26 @@
+@keyframes twinkle {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  .star {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background-color: #FFF;
+    animation: twinkle 2s infinite;
+  }
+  
+  .star:nth-child(1) {
+    top: 5%;
+    left: 10%;
+  }
+  
+  .star:nth-child(2) {
+    top: 10%;
+    left: 20%;
+  }
+  
+  /* Add more star positions as needed */
+  
