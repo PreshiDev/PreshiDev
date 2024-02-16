@@ -77,7 +77,7 @@ const Contact = () => {
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/PreshiDev" target='_blank' rel="noreferrer"><FaGithub /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/precious-gift-grandalat/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
                     <a className='hover:scale-125 ease-in-out duration-700' href={whatsappLink} target='_blank' rel="noreferrer"><FaWhatsapp /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="" target='_blank' rel="noreferrer"><FaTwitter /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href="https://twitter.com/PreciousG958" target='_blank' rel="noreferrer"><FaTwitter /></a>
                     {/* <a className='hover:scale-125 ease-in-out duration-700 hidden sm:block' href="https://www.fiverr.com/codeworthy" target='_blank' rel="noreferrer"><Fiverr_Icon /></a>
                         <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a>
                     */}

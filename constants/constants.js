@@ -64,6 +64,6 @@ export const CONTACTS = {
 export const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/PreshiDev',
   LINKEDIN: 'https://www.linkedin.com/in/precious-gift-grandalat/',
-  TWITTER: '',
+  TWITTER: 'https://twitter.com/PreciousG958',
   FACEBOOK: 'https://web.facebook.com/precious.vic.921/',
 };

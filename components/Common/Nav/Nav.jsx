@@ -1,5 +1,7 @@
 import { ImCross } from 'react-icons/im'
 import { FiAward } from 'react-icons/fi'
+import { FiFileText } from 'react-icons/fi'
+import { FiUser } from 'react-icons/fi'
 import { FaHandshake } from 'react-icons/fa'
 import { ImHome } from 'react-icons/im'
 import { HiIdentification } from 'react-icons/hi'
@@ -16,9 +18,10 @@ const Nav = ({ setIsOpen, isOpen }) => {
                 </div>
                 <div className="flex flex-col gap-y-2 px-6 w-full transition">
                     <NavItem setIsOpen={setIsOpen} NavRoute={'/'} NavIcon={<ImHome />} NavText={'Home'} />
-                    <NavItem setIsOpen={setIsOpen} NavRoute={'/aboutme'} NavIcon={<FiAward />} NavText={'AboutMe'} />
+                    <NavItem setIsOpen={setIsOpen} NavRoute={'/aboutme'} NavIcon={<FiUser />} NavText={'AboutMe'} />
                     <NavItem setIsOpen={setIsOpen} NavRoute={'/background'} NavIcon={<HiIdentification />} NavText={'Background'} />
                     <NavItem setIsOpen={setIsOpen} NavRoute={'/portfolio'} NavIcon={<FiAward />} NavText={'Portfolio'} />
+                    <NavItem setIsOpen={setIsOpen} NavRoute={'/myCv'} NavIcon={<FiFileText />} NavText={'CV'} />
                     <NavItem setIsOpen={setIsOpen} NavRoute={'/contact'} NavIcon={<FaHandshake />} NavText={'Contact'} />
                 </div>
             </div>
